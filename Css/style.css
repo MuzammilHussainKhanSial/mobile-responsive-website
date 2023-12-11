@@ -1,0 +1,503 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+   outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bs-primary);
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* color veriable */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.btn-danger:hover{
+    color: black;
+    background-color: transparent;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Sofia', cursive;
+}
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--bs-white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--bs-primary);
+}
+
+/* custom css */
+
+h2{
+    position: relative;
+    font-size: 1.725rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+h2::before{
+    position: absolute;
+    content: ' ';
+    width: 1.875rem;
+    height: 0.3125rem;
+    left: 0;
+    top: -1.5625rem;
+    border-radius: 0.3125rem;
+    background-color: var(--bs-danger);
+}
+
+.wrapper{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+ 
+.text-content{
+    width: 60%;
+    margin: auto;
+}
+
+
+
+/* ====================================
+Header
+=========================================*/
+.navigation-wrapper{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+
+}
+.navigation-wrapper .navbar-brand{
+    width: 10%;
+}
+
+.navigation-wrapper .navbar-brand img{
+    width: 100%;
+}
+
+.navigation-wrapper .nav-item{
+    padding: 0 10px;
+}
+
+.navigation-wrapper .nav-link{
+    text-decoration: none;
+    font-size: 1.234rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--bs-teal);
+    padding: 10px;
+    padding-left: 20px !important;
+}
+
+.navigation-wrapper .nav-link:hover,
+.navigation-wrapper .nav-link:active{
+    color: var(--bs-danger);
+}
+
+
+.menu-btn{
+    margin: 0px auto;
+}
+
+.navigation-wrapper .menu-btn:hover{
+    color: white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    border: unset;
+}
+
+/* styling navbar on scroll */
+
+.navigation-wrapper.scroll-on{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:var(--bs-blue);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all 1s ease-in;
+}
+
+.navigation-wrapper.scroll-on .nav-link:active,
+.navigation-wrapper.navigation-wrapper.onscroll:hover{
+    color: var(--bs-white);
+}
+
+.navigation-wrapper.scroll-on .btn-danger{
+    background-color: black;
+    color: white;
+}
+
+.navigation-wrapper.scroll-on .btn-danger:hover{
+    background-color:transparent;
+    color: black;
+}
+
+/* toggler button */
+
+.navbar-toggler{
+    color: var(--bs-white);
+}
+
+
+
+ /*================================== 
+Home || Banner
+ ====================================== */
+
+.home .carousel-caption{
+    top: 30%;
+    left: 5%;
+    color: var(--bs-danger);
+    text-align: start;
+}
+
+.carousel-caption h2{
+   color: white;
+}
+
+
+
+ /*================================== 
+     About Us
+ ====================================== */
+
+#about .carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--bs-danger);
+}
+
+#about .carousel-inner{
+    border: 1px solid white;
+    box-shadow: -4px -2px -4px black;
+}
+
+
+
+#about .about-text h1{
+font-size: 2.5rem;
+font-weight: 500;
+font-family: sans-serif;
+text-transform: capitalize;
+color: black;
+padding: 5px;
+letter-spacing: 3px;
+}
+
+#about .about-text p{
+    font-size: 1.275rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-overflow: none;
+    color: var(--bs-gray);
+    padding: 8px;
+    letter-spacing: 2px;
+}
+
+#about .about-text h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--bs-danger);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /*================================== 
+Feature
+ ====================================== */
+
+
+#feature .feature-img h2{
+font-size: 2.3rem;
+font-weight: 500;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 5px;
+text-align: start;
+text-transform: capitalize;
+text-overflow: hidden;
+color: var(--bs-danger);
+}
+
+#feature .feature-img p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 20px;
+    text-overflow: hidden;
+    color: var(--bs-gray);
+}
+
+#feature .feature-img-text img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+#feature .feature-img-text h2{
+    font-size: 1.775rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px var(--bs-white);
+    color: black;
+}
+
+
+#feature .feature-img-text p{
+font-size: 1rem;
+font-weight: 300;
+letter-spacing: 4px;
+word-spacing: 10px;
+color: black;
+text-transform: capitalize;
+padding: 15px 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*================================== 
+        Mobile
+ ====================================== */
+
+
+h2::before,
+.headphone h2::before{
+    left: 47%;
+}
+
+.headphone h2{
+    font-size: 2.456rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.headphone p{
+    font-size: 1.225rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    padding: 13px;
+    color: var(--bs-gray);
+}
+
+.headphone .headphoneImage{
+    width: 100%;
+    height: 18.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s all ease-in;
+}
+
+.headphone .headphoneImage:hover{
+    transform: scale(1.1);
+}
+
+.headphone #headphone-image{
+    background-image: url(../Images/headphone.jpg);
+    width: 100%;
+}
+
+.headphone .product-des{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.headphone .product-star .fa{
+    color: var(--bs-yellow);
+    padding: 5px;
+}
+
+.headphone .product-des a{
+    font-size: 1.375rem;
+    font-weight:bold;
+    text-transform: capitalize;
+    color:var(--bs-danger);
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.headphone .product-des .product-price ins{
+    color: var(--bs-gray);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+ /*================================== 
+    Contact us
+ ====================================== */
+ 
+.contact .form-group,
+ .contact form input[type=text]{
+    display: inline-block;
+    box-shadow: 2px 4px 6px black;
+    padding: 4px;
+    border-radius: 25px;
+    margin:10px 0px;
+    outline: none;
+ }
+
+ .contact form input[type=email],
+ .contact form input[type=text]{
+    display: inline-block;
+    padding: 0 25px;
+    height: 2.875rem;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    border-radius: 24px;
+    border: solid 2px white;
+ }
+
+ /* Footer */
+
+ .footer{
+    background-color: #213343;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.footer h5{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--bs-green);
+}
+.footer h5 a{
+    color: white;
+}
+
+
+.footer .social-icon{
+    width: 100%;
+    text-align: end;
+}
+
+.footer .social-icon .fa{
+    padding-left: 0.876rem;
+    padding-right: 0.875rem;
+    font-size: 1.345rem;
+    border: 1px white;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    margin-bottom: 12px;
+}
+
+
+.footer .social-icon .fa:hover{
+color: black;
+background-color: white;
+}
+
+
+
+
+
+
+
+

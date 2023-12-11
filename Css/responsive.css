@@ -1,0 +1,240 @@
+/*---------------------------------- media queria 1224---------------------------------- */
+
+@media(max-width:1224px){
+/* feature */
+
+}
+
+/*---------------------------------- media queria 991---------------------------------- */
+
+
+@media(max-width:991px){
+/* about */
+#about .about-text h2{
+    font-size: 2rem;
+}
+#about .about-text h1{
+    font-size: 1.5rem;
+
+}
+#about .about-text p{
+    font-size: 1rem;
+}
+
+#about .wrapper{
+    padding-bottom: 4rem;
+}
+/* feature */
+
+#feature .feature-img h2 {
+    font-size: 1.8rem;
+}
+
+#feature .feature-img p{
+    font-size: 1rem;
+}
+
+#feature .feature-img-text img {
+    width: 125px;
+    height: 70px;
+    margin-bottom: 40px;
+    
+}
+
+#feature .feature-img-text h2{
+    font-size: 1.4rem;
+}
+#feature .feature-img-text p{
+    font-size:15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+}
+
+
+/*---------------------------------- media queria 767---------------------------------- */
+
+
+@media(max-width:676px){
+.home .carousel-caption{
+    top: 20%;
+    left: 5%;
+}
+.home .carousel-caption h1{
+    font-size: 1.5rem;
+}
+.home .carousel-caption h2{
+    font-size: 1.2rem;
+}
+.home .carousel-caption p{
+    font-size: 0.780rem;
+}
+
+}
+
+@media(max-width:560px){
+
+/* about */
+#about .about-text{
+    text-align: center;
+}
+
+.headphone .headphoneImage {
+    height: 27.5rem;
+
+}
+
+}
+
+/*---------------------------------- media queria 530---------------------------------- */
+
+@media(max-width:530px){
+    .home .carousel-caption{
+        top: 15%;
+        left: 5%;
+    }
+    .home .carousel-caption h1{
+        font-size: 1.3rem;
+    }
+    .home .carousel-caption h2{
+        font-size: 1rem;
+    }
+    .home .carousel-caption p{
+        font-size: 0.680rem;
+    }
+
+    /* headphone */
+
+    .headphone h2 {
+        font-size: 1.456rem;
+    }
+
+    .headphone p{
+        font-size: 1rem;
+    }
+
+/*---------------------------------- media queria 475---------------------------------- */
+
+
+@media(max-width:475px){
+    .home .carousel-caption{
+        top: 10%;
+        left: 5%;
+    }
+    .home .carousel-caption h1{
+        font-size: 1.1rem;
+    }
+    .home .carousel-caption h2{
+        font-size: 0.975rem;
+    }
+    .home .carousel-caption p{
+        font-size: 0.580rem;
+    }
+    
+    }
+
+
+
+/*---------------------------------- media queria 430---------------------------------- */
+
+@media(max-width:430px){
+    @media(max-width:475px){
+        .home .carousel-caption{
+            top: 8%;
+            left: 3%;
+        }
+        .home .carousel-caption h1{
+            font-size: 1rem;
+        }
+        .home .carousel-caption h2{
+            font-size: 0.875rem;
+        }
+        .home .carousel-caption p{
+            font-size: 0.580rem;
+        }
+        
+        }
+
+        /* about */
+
+        #about .about-text{
+            text-align: center;
+        }
+    
+}
+
+/*---------------------------------- media queria 330---------------------------------- */
+
+@media(max-width:330px){
+        .home .carousel-caption .btn-danger{
+          display: none;
+        
+}
+#about .about-text p{
+    font-size: 0.5rem;
+}
+
+/* feature */
+
+#feature .feature-img{
+    text-align: center;
+}
+
+#feature .feature-img h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#feature .feature-img p{
+    font-size: 0.5rem;
+}
+
+#feature .feature-img-text img {
+    width: 125px;
+    height: 60px;
+    margin-bottom: 40px;
+    
+}
+
+#feature .feature-img-text h2{
+    font-size: 1rem;
+}
+#feature .feature-img-text p{
+    font-size: 8px;
+}
+
+
+
+
+/* headphone */
+
+.headphone .headphoneImage {
+height: 15.5rem;
+}
+
+.headphone h2 {
+    font-size: 1rem;
+}
+
+.headphone p{
+    font-size:0.530rem;
+}
+
+}
+
+/* footer */
+
+.footer{
+    padding-top: 10px;
+}
+
+.footer h5 {
+    font-size: 8px;
+}
+
+.footer .social-icon .fa {
+font-size: 10px;
+}
+
+}

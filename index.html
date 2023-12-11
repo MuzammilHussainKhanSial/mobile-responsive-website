@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Website</title>
+    <!-- link bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link font-Awesome -->
+    <script src="https://kit.fontawesome.com/b595e9277a.js" crossorigin="anonymous"></script>
+    <!-- llink font-text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Princess+Sofia&family=Russo+One&family=Sofia&family=Sofia+Sans+Condensed&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+<!--================================== 
+Header || navbar
+ ======================================-->
+<header>
+ <nav class="navbar navbar-expand-lg  navigation-wrapper">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo.png" alt="Logo" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa fa-bars  navbar-toggler-icon" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#headphone">head Phone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a href="#" class="btn menu-btn btn-danger">Buy Now</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!--================================== 
+Home || Banner
+ ======================================-->
+<section id="home" class="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/Banner-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption col-10 col-md-6 col-offset-md-6">
+                <h2>iPhone Mobile</h2>
+                <h1>Smart mobile</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-danger">Shop Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/banner-1 (2).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption col-10 col-md-6 col-offset-md-6">
+                <h2>iPhone Mobile</h2>
+                <h1>Smart mobile</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-danger">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+
+
+ <!--================================== 
+About Us || Section
+ ======================================-->
+<section id="about" class="about">
+  <div class="about-section wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-lg-5 mb-md-0 mb-2 ">
+          <div class="hero-slider">
+            <!-- slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Images/pic-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/pic-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/pic-3.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-7 mb-md-0 mb-2 position-relative">
+          <div class="about-text">
+       <h2>Smart & beautiful</h2>
+       <h1>Mobiles</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Inventore facilis ducimus, ipsa ad magnam voluptatem sequi,
+          quae incidunt itaque aut dolores excepturi autem! A odit doloribus,
+           maiores qui ipsum quisquam.</p>
+           <button class="btn btn-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!--================================== 
+Feature || Section
+ ======================================-->
+
+<section id="feature">
+  <div class="feature wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-lg-5 mb-lg-0 mb-4">
+          <div class="feature-img">
+            <h2>Wear it Ease With Comfort Ever</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               A voluptates nesciunt aspernatur consequuntur. Porro accusantium
+                commodi omnis pariatur ea reiciendis dicta fugiat. Doloribus ab
+                 consectetur laudantium illo earum harum dolore?</p>
+                 <img src="./Images/mobile pic.jpg" alt="" class="img-fluid mt-lg-3">
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-7 mb-lg-0 mb-4">
+          <div class="row">
+            <div class="col-6">
+              <div class="feature-img-text">
+                <img src="./Images/wifi.avif" alt="" class="img-fluid">
+                <h2>Wifi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+                   sapiente similique. Qui, unde error obcaecati aliquid sed quis </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-img-text">
+                <img src="./Images/Hotspot.png" alt="" class="img-fluid">
+                <h2>Hotspot</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+                   sapiente similique. Qui, unde error obcaecati aliquid sed quis </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-img-text">
+                <img src="./Images/bluto.jpeg" alt="" class="img-fluid">
+                <h2>Hand Free</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+                   sapiente similique. Qui, unde error obcaecati aliquid sed quis </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-img-text">
+                <img src="./Images/5G.webp" alt="" class="img-fluid">
+                <h2>5G</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+                   sapiente similique. Qui, unde error obcaecati aliquid sed quis </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!--================================== 
+headphone || Secton
+ ======================================-->
+<section id="headphone">
+  <div class="headphone wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-2 text-center">
+          <h2>Choose your Wireless HeadPhone</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Possimus, nisi magni recusandae fuga doloremque iste necessitatibus.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4  p-1">
+          <div class="headphoneImage mb-4" id="headphone-image">  </div>
+            <div class="product-des">
+              <div class="product-star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </div>
+              <a href="#">
+                <h4>On Hear HeadPhone</h4>
+              </a>
+              <div class="product-price">
+                <ins>50$</ins>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4  p-1">
+          <div class="headphoneImage mb-4" id="headphone-image">  </div>
+            <div class="product-des">
+              <div class="product-star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </div>
+              <a href="#">
+                <h4>On Hear HeadPhone</h4>
+              </a>
+              <div class="product-price">
+                <ins>50$</ins>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4  p-1">
+          <div class="headphoneImage mb-4" id="headphone-image">  </div>
+            <div class="product-des">
+              <div class="product-star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </div>
+              <a href="#">
+                <h4>On Hear HeadPhone</h4>
+              </a>
+              <div class="product-price">
+                <ins>50$</ins>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ <!--================================== 
+Contact Us || Section
+ ======================================-->
+
+ <section id="contact">
+  <div class="contact wrappper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2>Say Hello To Us</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Maiores voluptas vel nemo ipsam</p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-sm-12 text-center mb-4 p-1">
+          <form action="#">
+            <input type="text" placeholder="Enter Your Text">
+            <div class="form-group">
+              <input type="email" placeholder="Enter Your email">
+              <button type="submit" class="btn subscribe text-danger">Send<i class="fa fa-arrow-right ms-2" style="color: red;"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+<!-- footer -->
+
+ <footer>
+  <div class="footer">
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>2024 copyright muzammilhussain@gmail.com <a href="#">All Right Reserved</a></h5>
+    </div>
+      <div class="col-sm-6">
+      <div class="social-icon">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+      </div>
+  </div>
+ </div>
+  </div>
+ </footer>
+
+
+
+
+
+
+</body>
+
+<!-- link bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- main js -->
+<script src="./js/main.js"></script>
+
+</html>
